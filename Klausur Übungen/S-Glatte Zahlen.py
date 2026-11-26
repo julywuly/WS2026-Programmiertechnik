@@ -1,5 +1,7 @@
 def isPrim(zahl):
-    for i in range(2, zahl):
+    if zahl < 2:
+        return False
+    for i in range(2, zahl//2+1):
         if zahl % i == 0:
             return False
     return True

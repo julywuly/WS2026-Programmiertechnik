@@ -183,9 +183,14 @@ def is_even(n):
 def is_odd(n):
     if n == 0:
         return False
-
     return is_even(n - 1)
 
+#Ohne Rekursion
+def is_Odd(n):
+    return n % 2 != 0
+
+def isEven(n):
+    return n % 2 == 0
 
 # =========================
 # VERSCHACHTELTE LISTEN
@@ -289,3 +294,7 @@ if __name__ == "__main__":
     print(is_even(8))
 
     print(sum_integers([1, [2, [3]], 4.44, [5, ["Hallo", 6]]]))
+
+
+    # optimierte Schleife ohne is_Odd funktion
+    #for(i, n**2+1,2)
